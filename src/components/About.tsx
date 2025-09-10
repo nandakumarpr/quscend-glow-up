@@ -17,71 +17,75 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              About Quscend
+    <section id="about" className="py-32 bg-muted/30 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,hsl(var(--primary)_/_0.03)_25%,hsl(var(--primary)_/_0.03)_50%,transparent_50%,transparent_75%,hsl(var(--primary)_/_0.03)_75%)] bg-[length:60px_60px]"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-display-lg md:text-display-xl font-black text-foreground mb-6 tracking-tight">
+              Powering Digital
+              <span className="block bg-gradient-primary bg-clip-text text-transparent">Excellence</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              We are a core technology company with expertise in jump starting application 
-              development, scaling existing applications and cloud adoption.
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-medium">
+              We are the technology catalyst that transforms ideas into scalable, 
+              future-ready digital solutions that drive business growth.
             </p>
           </div>
 
-          <Card className="bg-gradient-card border-0 shadow-elegant mb-12">
-            <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="space-y-6">
-                  <h3 className="text-2xl md:text-3xl font-bold text-card-foreground">
-                    Our Expertise
-                  </h3>
-                  
-                  <ul className="space-y-4">
-                    {features.map((feature, index) => (
-                      <li key={index} className="flex items-start space-x-3">
-                        <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-card-foreground leading-relaxed">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left - Main Content */}
+            <div className="space-y-8">
+              <div className="bg-gradient-glass backdrop-blur-glass rounded-3xl p-10 border border-white/10 shadow-glass">
+                <h3 className="text-2xl md:text-3xl font-bold text-card-foreground mb-8">
+                  Our Expertise
+                </h3>
+                
+                <ul className="space-y-6">
+                  {features.map((feature, index) => (
+                    <li key={index} className="flex items-start space-x-4">
+                      <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0 mt-1">
+                        <CheckCircle className="w-4 h-4 text-primary-foreground" />
+                      </div>
+                      <span className="text-card-foreground leading-relaxed font-medium">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
-                <div className="space-y-6">
-                  <div className="bg-primary-light rounded-2xl p-6">
-                    <h4 className="text-lg font-semibold text-primary mb-3">
-                      Decades of Experience
-                    </h4>
-                    <p className="text-muted-foreground">
-                      We have decades of experience helping clients use SaaS-based web and 
-                      mobile solutions to expand their online presence and reach.
-                    </p>
-                  </div>
-
-                  <div className="bg-tech-cyan-light rounded-2xl p-6">
-                    <h4 className="text-lg font-semibold text-tech-cyan mb-3">
-                      Scalable Solutions
-                    </h4>
-                    <p className="text-muted-foreground">
-                      Solutions that scale seamlessly as the application features, 
-                      user base and business grows.
-                    </p>
-                  </div>
-                </div>
+            {/* Right - Stats & Highlights */}
+            <div className="space-y-8">
+              <div className="bg-gradient-primary rounded-3xl p-10 text-primary-foreground shadow-xl">
+                <h4 className="text-3xl font-bold mb-4">20+ Years</h4>
+                <p className="text-primary-foreground/90 text-lg leading-relaxed">
+                  Of experience helping clients leverage SaaS-based web and 
+                  mobile solutions to expand their digital presence.
+                </p>
               </div>
 
-              <div className="text-center mt-12">
-                <Button 
-                  size="lg"
-                  onClick={() => scrollToSection("contact")}
-                  className="bg-gradient-primary hover:opacity-90 text-primary-foreground border-0 px-8 py-6"
-                >
-                  Know More
-                </Button>
+              <div className="bg-gradient-accent rounded-3xl p-10 text-white shadow-xl">
+                <h4 className="text-3xl font-bold mb-4">100% Scalable</h4>
+                <p className="text-white/90 text-lg leading-relaxed">
+                  Solutions that grow seamlessly with your application features, 
+                  user base, and business expansion.
+                </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Button 
+              size="lg"
+              onClick={() => scrollToSection("contact")}
+              className="bg-gradient-primary hover:opacity-90 text-primary-foreground border-0 px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+            >
+              Start Your Transformation
+            </Button>
+          </div>
         </div>
       </div>
     </section>

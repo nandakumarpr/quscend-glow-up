@@ -2,65 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Quscend Design System - Modern Tech Company Theme
+/* Quscend Trendy Design System - Inspired by Modern Tech Companies
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 10% 3.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* Blue brand colors inspired by tech/digital theme */
-    --primary: 243 75% 59%;
+    /* Modern purple-to-pink gradient brand */
+    --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 243 100% 96%;
-    --primary-dark: 243 75% 45%;
+    --primary-light: 262 100% 96%;
+    --primary-dark: 262 83% 48%;
 
+    /* Warm secondary tones */
     --secondary: 220 14.3% 95.9%;
     --secondary-foreground: 220 8.9% 46.1%;
 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Orange accent color */
-    --accent: 38 92% 50%;
+    /* Electric accent colors */
+    --accent: 142 76% 36%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 38 100% 97%;
+    --accent-light: 142 76% 96%;
 
-    /* Tech cyan for highlights */
-    --tech-cyan: 188 94% 43%;
-    --tech-cyan-light: 188 100% 97%;
+    /* Trendy cyan highlight */
+    --tech-cyan: 189 94% 43%;
+    --tech-cyan-light: 189 100% 96%;
+
+    /* Modern orange for CTAs */
+    --orange: 24 100% 58%;
+    --orange-light: 24 100% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 243 75% 59%;
+    --ring: 262 83% 58%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(243 75% 59%), hsl(188 94% 43%));
-    --gradient-hero: linear-gradient(135deg, hsl(243 75% 59%) 0%, hsl(243 75% 45%) 50%, hsl(188 94% 43%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14.3% 95.9%));
+    /* Trendy gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(189 94% 43%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(262 83% 48%) 30%, hsl(189 94% 43%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%), hsl(24 100% 58%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.8), hsl(220 14.3% 95.9% / 0.4));
+    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.05));
     
-    /* Shadows */
+    /* Modern shadows */
     --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
     --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
     --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 30px hsl(243 75% 59% / 0.3);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 10px 10px -5px hsl(0 0% 0% / 0.04);
+    --shadow-glow: 0 0 50px hsl(262 83% 58% / 0.3);
+    --shadow-glass: 0 8px 32px 0 hsl(31 40% 72% / 0.37);
 
-    /* Animations */
-    --transition-base: all 0.2s ease-in-out;
-    --transition-slow: all 0.3s ease-in-out;
+    /* Smooth transitions */
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -80,19 +89,19 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 11 12% 7%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 11 12% 9%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 11 12% 9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 243 75% 59%;
+    --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 243 50% 20%;
-    --primary-dark: 243 75% 45%;
+    --primary-light: 262 50% 15%;
+    --primary-dark: 262 83% 48%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -100,25 +109,31 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 38 92% 50%;
+    --accent: 142 76% 36%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 38 50% 15%;
+    --accent-light: 142 50% 10%;
 
-    --tech-cyan: 188 94% 43%;
-    --tech-cyan-light: 188 50% 15%;
+    --tech-cyan: 189 94% 43%;
+    --tech-cyan-light: 189 50% 10%;
+
+    --orange: 24 100% 58%;
+    --orange-light: 24 50% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 243 75% 59%;
+    --ring: 262 83% 58%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(243 75% 59%), hsl(188 94% 43%));
-    --gradient-hero: linear-gradient(135deg, hsl(243 75% 35%) 0%, hsl(243 75% 25%) 50%, hsl(188 94% 25%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(222.2 84% 4.9%), hsl(217.2 32.6% 17.5%));
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(189 94% 43%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 38%) 0%, hsl(262 83% 28%) 30%, hsl(189 94% 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(142 76% 26%), hsl(24 100% 48%));
+    --gradient-card: linear-gradient(145deg, hsl(11 12% 9% / 0.8), hsl(217.2 32.6% 17.5% / 0.4));
+    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.05), hsl(0 0% 100% / 0.02));
     
-    --shadow-glow: 0 0 30px hsl(243 75% 59% / 0.5);
+    --shadow-glow: 0 0 50px hsl(262 83% 58% / 0.5);
+    --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.37);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
