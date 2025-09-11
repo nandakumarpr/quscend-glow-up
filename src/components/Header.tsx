@@ -18,11 +18,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-lg">
-              <span className="text-primary-foreground font-bold text-xl">Q</span>
-            </div>
-            <span className="text-2xl font-bold text-foreground tracking-tight">Quscend</span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/464b44ed-c188-48ef-89b7-db02ea3f1fae.png" 
+              alt="Quscend Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
