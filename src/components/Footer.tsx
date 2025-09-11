@@ -7,11 +7,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">Q</span>
-              </div>
-              <span className="text-xl font-bold text-primary-foreground">Quscend</span>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/464b44ed-c188-48ef-89b7-db02ea3f1fae.png" 
+                alt="Quscend Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Digital Business Transformation experts with decades of experience in 
