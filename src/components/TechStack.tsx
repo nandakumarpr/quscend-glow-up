@@ -48,7 +48,7 @@ const TechStack = () => {
                 </h3>
                 
                 {/* Glow effect on hover */}
-                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-primary blur-xl scale-110"></div>
+                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-primary blur-xl scale-110"></div>
               </div>
             </div>
           ))}
